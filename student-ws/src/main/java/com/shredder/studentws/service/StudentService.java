@@ -54,9 +54,15 @@ public class StudentService {
         studentRepository.deleteAll();
     }
 
+    public void update(StudentEntity std1,Long userID ){
+        Optional<StudentEntity> studentOptional = studentRepository.findById(userID);
+        StudentEntity std2=studentOptional.orElseGet(StudentEntity::new);
 
+        std2.setId(std1.getId());
+        std2.setName(std1.getName());
+        std2.setDob(std1.getDob());
+        std2.setStd(std1.getStd());
+        studentRepository.save(std2);
 
-
-
-
+    }
 }

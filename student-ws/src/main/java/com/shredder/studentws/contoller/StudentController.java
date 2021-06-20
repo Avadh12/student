@@ -53,4 +53,8 @@ public class StudentController {
         studentService.deleteAll();
     }
 
+    @PutMapping("/api/v1/student/{userid}")
+    private void updateStudent(@PathVariable Long userid ,@RequestBody StudentEntity std2){
+        studentService.update(std2, userid);
+    }
 }
