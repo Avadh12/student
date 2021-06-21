@@ -10,7 +10,7 @@ The CRUD stands for Create, Read/Retrieve, Update, and Delete. These are the fou
 ## Request API's - 
 * For POST Request-
 
-      api/v1/student
+      api/v1/student  - Create data for student.
     
 * For GET Request -
 
