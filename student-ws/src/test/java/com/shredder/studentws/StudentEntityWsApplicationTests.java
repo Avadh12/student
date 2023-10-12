@@ -10,4 +10,9 @@ class StudentEntityWsApplicationTests {
 	void contextLoads() {
 	}
 
+	teacher.setId(id);
+		teacher.setName(name);
+		teacher.setEmail(email);
+		teacher.setPhone(phone);
+
 }
