@@ -31,6 +31,7 @@ public class StudentEntity {
     }
 
     private Integer std;
+    private String Bhanu
 
     private String dob;
 
